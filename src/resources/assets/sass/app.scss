@@ -1,0 +1,159 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import 'node_modules/materialize-css/sass/materialize';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+/*======================================================
+Footer always at bottom CSS
+=======================================================*/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+/*========================================================
+Navbar CSS
+========================================================*/
+
+.nav-wrapper {
+  margin-left: 100px;
+  font-family: Hurme Geometric Sans 1 Light;
+  letter-spacing: 5px;
+
+}
+
+/*========================================================
+Buttonstyle CSS
+========================================================*/
+
+
+.btn-small {
+  width: 200px;
+}
+
+/*========================================================
+Login body CSS
+========================================================*/
+
+#loginDiv {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  width: 500px;
+}
+
+#btnSignIn {
+  margin-top: 20px;
+}
+
+#storyIcon {
+  height: 100px;
+  width: auto;
+  margin-bottom: 0px;
+}
+
+/*========================================================
+Apply body CSS
+========================================================*/
+
+#applyDiv {
+  text-align: center;
+  margin-top: 55px;
+  position: relative;
+  width: 500px;
+  margin-bottom: 55px;
+}
+
+/*========================================================
+All animations
+/*
+
+
+/* Button hover animation (loginPage) */
+.btn-small span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-small span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-small:hover span {
+  padding-right: 25px;
+}
+
+.btn-small:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+#mainFrontContainer {
+  margin-top: 0px;
+  margin-bottom: 55px;
+
+}
+
+
+.is-marked {
+  background-color: #81c784 !important;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+/*========================================================
+End footer CSS
+=========================================================*/
+
+#mainFrontContainer {
+  margin-top: 0px;
+  margin-bottom: 55px;
+}

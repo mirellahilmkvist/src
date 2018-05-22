@@ -1,0 +1,35 @@
+  window.onload=function(){
+    document.querySelector('[name="colorPick"]').addEventListener('change', function () {
+      var color = this.options[this.selectedIndex].textContent;
+
+      document.body.style.backgroundColor = color;
+    });
+  }
+
+
+  function start(){
+    var menyBtn = document.querySelector("#meny-btn");
+    menyBtn.onclick = showHideMenu;
+  }
+
+
+  function showHideMenu(){
+    var menu = document.querySelector("#meny");
+    if(menu.className == ""){
+      menu.className = "show";
+    }else{
+      menu.className = "";
+    }
+  }
+
+
+
+
+
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  float: left;
+
+  vertical-align: middle;
